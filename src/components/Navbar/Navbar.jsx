@@ -91,7 +91,7 @@ const Navbar = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
             >
-              AutoElite
+              CityMechanics
             </motion.span>
           </motion.a>
 

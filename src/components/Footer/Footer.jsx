@@ -1,5 +1,14 @@
-import { motion } from 'framer-motion';
-import { FaCar, FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
+import { motion } from "framer-motion";
+import {
+  FaCar,
+  FaFacebook,
+  FaTwitter,
+  FaInstagram,
+  FaLinkedin,
+  FaMapMarkerAlt,
+  FaPhoneAlt,
+  FaEnvelope,
+} from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -30,10 +39,6 @@ const Footer = () => {
         ))}
       </div>
 
-     
-      
-    
-
       {/* Footer content */}
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
@@ -41,10 +46,11 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold text-white mb-4 flex items-center">
               <FaCar className="text-red-500 mr-2" />
-              AutoShield Warranty
+              CityMechanics
             </h3>
             <p className="text-gray-400 mb-4">
-              Your trusted partner for comprehensive vehicle protection plans and extended warranties.
+              Your trusted partner for comprehensive vehicle protection plans
+              and extended warranties.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-white transition">
@@ -66,11 +72,46 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold text-white mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 hover:text-red-400 transition">Home</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-red-400 transition">About Us</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-red-400 transition">Services</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-red-400 transition">Pricing</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-red-400 transition">Contact</a></li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-red-400 transition"
+                >
+                  Home
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-red-400 transition"
+                >
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-red-400 transition"
+                >
+                  Services
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-red-400 transition"
+                >
+                  Pricing
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-red-400 transition"
+                >
+                  Contact
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -78,11 +119,46 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold text-white mb-4">Our Services</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 hover:text-red-400 transition">Extended Warranty</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-red-400 transition">Vehicle Protection</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-red-400 transition">Maintenance Plans</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-red-400 transition">Roadside Assistance</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-red-400 transition">EV Battery Coverage</a></li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-red-400 transition"
+                >
+                  Extended Warranty
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-red-400 transition"
+                >
+                  Vehicle Protection
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-red-400 transition"
+                >
+                  Maintenance Plans
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-red-400 transition"
+                >
+                  Roadside Assistance
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-red-400 transition"
+                >
+                  EV Battery Coverage
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -92,7 +168,9 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <FaMapMarkerAlt className="text-red-400 mt-1 mr-3 flex-shrink-0" />
-                <span className="text-gray-400">123 Auto Street, Motor City, MC 12345</span>
+                <span className="text-gray-400">
+                  123 Auto Street, Motor City, MC 12345
+                </span>
               </li>
               <li className="flex items-center">
                 <FaPhoneAlt className="text-red-400 mr-3" />
@@ -112,18 +190,34 @@ const Footer = () => {
         {/* Copyright */}
         <div className="flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-500 text-sm mb-4 md:mb-0">
-            © {new Date().getFullYear()} AutoShield Warranty. All rights reserved.
+            © {new Date().getFullYear()} AutoShield Warranty. All rights
+            reserved.
           </p>
           <div className="flex space-x-6">
-            <a href="#" className="text-gray-500 hover:text-white text-sm transition">Privacy Policy</a>
-            <a href="#" className="text-gray-500 hover:text-white text-sm transition">Terms of Service</a>
-            <a href="#" className="text-gray-500 hover:text-white text-sm transition">Sitemap</a>
+            <a
+              href="#"
+              className="text-gray-500 hover:text-white text-sm transition"
+            >
+              Privacy Policy
+            </a>
+            <a
+              href="#"
+              className="text-gray-500 hover:text-white text-sm transition"
+            >
+              Terms of Service
+            </a>
+            <a
+              href="#"
+              className="text-gray-500 hover:text-white text-sm transition"
+            >
+              Sitemap
+            </a>
           </div>
         </div>
       </div>
 
       {/* Floating cars */}
-      <motion.div 
+      <motion.div
         className="absolute bottom-10 left-1/4 text-red-400 opacity-20"
         animate={{
           y: [0, -10, 0],
@@ -131,12 +225,12 @@ const Footer = () => {
         transition={{
           duration: 4,
           repeat: Infinity,
-          ease: "easeInOut"
+          ease: "easeInOut",
         }}
       >
         <FaCar className="text-4xl" />
       </motion.div>
-      <motion.div 
+      <motion.div
         className="absolute bottom-20 right-1/4 text-yellow-400 opacity-20"
         animate={{
           y: [0, -15, 0],
@@ -145,7 +239,7 @@ const Footer = () => {
           duration: 5,
           repeat: Infinity,
           ease: "easeInOut",
-          delay: 0.5
+          delay: 0.5,
         }}
       >
         <FaCar className="text-5xl" />

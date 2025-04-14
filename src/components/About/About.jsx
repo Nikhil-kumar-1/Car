@@ -42,7 +42,7 @@ const AboutSection = () => {
         >
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-yellow-400">
-              Warranty Protection
+              Insurance Warranty Protection
             </span>
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto">

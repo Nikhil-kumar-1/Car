@@ -88,9 +88,12 @@ const HeroSection = () => {
           transition={{ delay: 2.5 }}
         >
           {[
-            { value: "1,100+", label: "HORSEPOWER" },
-            { value: "2.5s", label: "0-100 KM/H" },
-            { value: "340+", label: "TOP SPEED" }
+            
+              { value: "15,000+", label: "Cars Serviced" },
+              { value: "500+", label: "Certified Mechanics" },
+              { value: "98%", label: "Customer Satisfaction" }
+            
+            
           ].map((stat, index) => (
             <motion.div 
               key={index}

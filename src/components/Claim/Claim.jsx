@@ -23,7 +23,7 @@ const CarClaimSection = () => {
         >
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-yellow-400">
-              Hassle-Free Car Claim Process
+              Hassle-Free Insurance Car Claim Process
             </span>
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto text-lg">

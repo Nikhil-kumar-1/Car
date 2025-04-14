@@ -42,7 +42,7 @@ const AboutSection = () => {
         >
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-yellow-400">
-              Insurance Warranty Protection
+              Car Warranty Protection
             </span>
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
@@ -235,12 +235,12 @@ const AboutSection = () => {
               </p>
               <div className="grid grid-cols-2 gap-4">
                 <div className="bg-gray-900/50 p-4 rounded-lg border border-gray-700/50">
-                  <p className="text-3xl font-bold text-red-500">24+</p>
-                  <p className="text-gray-300 text-sm">Years Experience</p>
+                  <p className="text-3xl font-bold text-red-500">100+</p>
+                  <p className="text-gray-300 text-sm">Franchise Outlets Across India</p>
                 </div>
                 <div className="bg-gray-900/50 p-4 rounded-lg border border-gray-700/50">
                   <p className="text-3xl font-bold text-yellow-400">99%</p>
-                  <p className="text-gray-300 text-sm">Claim Approval</p>
+                  <p className="text-gray-300 text-sm">Happy & Satisfied Customers</p>
                 </div>
               </div>
             </div>

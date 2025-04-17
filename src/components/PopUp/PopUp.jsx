@@ -59,14 +59,14 @@ const CarServicePopup = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="fixed inset-0 bg-black bg-opacity-70 z-50 flex items-center justify-center p-4"
+          className="fixed inset-0 bg-black bg-opacity-70 z-50 flex items-center justify-center p-4 overflow-y-auto"
         >
           <motion.div
             initial={{ scale: 0.9, y: 50 }}
             animate={{ scale: 1, y: 0 }}
             exit={{ scale: 0.9, y: 50 }}
             transition={{ type: 'spring', damping: 25 }}
-            className="relative bg-gradient-to-br from-gray-900 to-gray-950 rounded-xl max-w-2xl w-full overflow-hidden border border-gray-700 shadow-2xl"
+            className="relative bg-gradient-to-br from-gray-900 to-gray-950 rounded-xl w-full max-w-3xl mx-auto overflow-hidden border border-gray-700 shadow-2xl my-8"
           >
             <button
               onClick={() => setIsOpen(false)}
@@ -87,10 +87,10 @@ const CarServicePopup = () => {
             </div>
 
             {/* Tabs */}
-            <div className="flex border-b border-gray-700">
+            <div className="flex border-b border-gray-700 overflow-x-auto">
               <button
                 onClick={() => setActiveTab('service')}
-                className={`flex-1 py-3 font-medium ${
+                className={`flex-1 min-w-max py-3 px-2 font-medium ${
                   activeTab === 'service'
                     ? 'text-yellow-400 border-b-2 border-yellow-400'
                     : 'text-gray-400 hover:text-gray-300'
@@ -101,7 +101,7 @@ const CarServicePopup = () => {
               </button>
               <button
                 onClick={() => setActiveTab('claim')}
-                className={`flex-1 py-3 font-medium ${
+                className={`flex-1 min-w-max py-3 px-2 font-medium ${
                   activeTab === 'claim'
                     ? 'text-yellow-400 border-b-2 border-yellow-400'
                     : 'text-gray-400 hover:text-gray-300'
@@ -112,7 +112,7 @@ const CarServicePopup = () => {
               </button>
               <button
                 onClick={() => setActiveTab('callback')}
-                className={`flex-1 py-3 font-medium ${
+                className={`flex-1 min-w-max py-3 px-2 font-medium ${
                   activeTab === 'callback'
                     ? 'text-yellow-400 border-b-2 border-yellow-400'
                     : 'text-gray-400 hover:text-gray-300'
@@ -123,36 +123,36 @@ const CarServicePopup = () => {
               </button>
             </div>
 
-            <div className="p-6">
+            <div className="p-6 max-h-[70vh] overflow-y-auto">
               {/* Service Center Tab */}
               {activeTab === 'service' && (
                 <>
-                  <div className="bg-gray-800/50 rounded-lg p-4 mb-6 border border-gray-700 flex items-center">
-                    <div className="bg-gradient-to-r from-red-600 to-red-500 p-3 rounded-full mr-4">
+                  <div className="bg-gray-800/50 rounded-lg p-4 mb-6 border border-gray-700 flex flex-col sm:flex-row items-center">
+                    <div className="bg-gradient-to-r from-red-600 to-red-500 p-3 rounded-full mb-3 sm:mb-0 sm:mr-4">
                       <FaPhone className="text-white text-xl" />
                     </div>
-                    <div>
+                    <div className="text-center sm:text-left">
                       <h3 className="text-white font-medium">
                         24/7 Toll-Free Support
                       </h3>
                       <a
-                        href="tel:18001026364"
-                        className="text-2xl font-bold text-yellow-400 hover:text-yellow-300 transition block"
+                        href="tel:9953338807"
+                        className="text-xl sm:text-2xl font-bold text-yellow-400 hover:text-yellow-300 transition block"
                       >
-                        1800-102-6364
+                        9953338807
                       </a>
-                      <div className="flex space-x-4 mt-2">
+                      <div className="flex flex-col sm:flex-row sm:space-x-4 mt-2 justify-center sm:justify-start">
                         <a
-                          href="tel:9818866364"
+                          href="tel:9953338807"
                           className="text-sm text-yellow-400 hover:underline"
                         >
-                          <FaPhone className="inline mr-1" /> 9818866364
+                          <FaPhone className="inline mr-1" /> 9953338807
                         </a>
                         <a
-                          href="tel:9599087715"
+                          href="tel:9953338807"
                           className="text-sm text-yellow-400 hover:underline"
                         >
-                          <FaPhone className="inline mr-1" /> 9599087715
+                          <FaPhone className="inline mr-1" /> 9953338807
                         </a>
                       </div>
                     </div>
@@ -163,7 +163,7 @@ const CarServicePopup = () => {
                     Find Nearest Service Center
                   </h3>
 
-                  <div className="flex mb-6">
+                  <div className="flex flex-col sm:flex-row mb-6">
                     <input
                       type="text"
                       value={pincode}
@@ -172,12 +172,12 @@ const CarServicePopup = () => {
                       }
                       placeholder="Enter 6-digit pincode"
                       maxLength={6}
-                      className="flex-1 bg-gray-800 border border-gray-700 text-white px-4 py-3 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
+                      className="flex-1 bg-gray-800 border border-gray-700 text-white px-4 py-3 rounded-t-lg sm:rounded-tr-none sm:rounded-l-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
                     />
                     <button
                       onClick={checkPincode}
                       disabled={pincode.length !== 6 || isChecking}
-                      className={`px-6 py-3 rounded-r-lg font-medium ${
+                      className={`px-6 py-3 rounded-b-lg sm:rounded-bl-none sm:rounded-r-lg font-medium ${
                         pincode.length === 6
                           ? 'bg-gradient-to-r from-yellow-600 to-yellow-500 text-gray-900 hover:from-yellow-500 hover:to-yellow-400'
                           : 'bg-gray-700 text-gray-400 cursor-not-allowed'
@@ -202,8 +202,8 @@ const CarServicePopup = () => {
                               : 'border-gray-700 bg-gray-800/50'
                           }`}
                         >
-                          <div className="flex justify-between">
-                            <div>
+                          <div className="flex flex-col sm:flex-row sm:justify-between">
+                            <div className="mb-2 sm:mb-0">
                               <h5
                                 className={`font-medium ${
                                   center.available
@@ -217,7 +217,7 @@ const CarServicePopup = () => {
                                 {center.address}
                               </p>
                             </div>
-                            <span className="text-xs px-2 py-1 rounded-full bg-gray-700 text-gray-300">
+                            <span className="text-xs px-2 py-1 rounded-full bg-gray-700 text-gray-300 self-start sm:self-center">
                               {center.distance}
                             </span>
                           </div>

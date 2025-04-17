@@ -169,16 +169,16 @@ const Footer = () => {
               <li className="flex items-start">
                 <FaMapMarkerAlt className="text-red-400 mt-1 mr-3 flex-shrink-0" />
                 <span className="text-gray-400">
-                  123 Auto Street, Motor City, MC 12345
+                  Motihari
                 </span>
               </li>
               <li className="flex items-center">
                 <FaPhoneAlt className="text-red-400 mr-3" />
-                <span className="text-gray-400">+1 (800) 123-4567</span>
+                <span className="text-gray-400">9953338807</span>
               </li>
               <li className="flex items-center">
                 <FaEnvelope className="text-red-400 mr-3" />
-                <span className="text-gray-400">info@autoshield.com</span>
+                <span className="text-gray-400">info@citymechanics.com</span>
               </li>
             </ul>
           </div>

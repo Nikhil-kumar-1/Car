@@ -89,7 +89,7 @@ const HeroSection = () => {
         >
           {[
             
-              { value: "15,000+", label: "Cars Serviced" },
+              { value: "250+", label: "Cars Serviced" },
               { value: "500+", label: "Certified Mechanics" },
               { value: "98%", label: "Customer Satisfaction" }
             
